@@ -4,19 +4,15 @@ public static class Utilities
 {
     public class BisectArrayToListsQueryResult
     {
-        public List<int> ListA { get; set; } = [];
-        public List<int> ListB { get; set; } = [];
+        public List<int> ListA { get; } = [];
+        public List<int> ListB { get; } = [];
     }
 
     public static int[] GetNumbersFromFileQuery(string fileInput)
     {
-        string contents =
-            File.ReadAllText(fileInput);
+        string contents = File.ReadAllText(fileInput);
 
-        string[] lines = contents.Split(
-            ["\r\n", "\r", "\n", "   "],
-            StringSplitOptions.None
-        );
+        string[] lines = contents.Split(["\r\n", "\r", "\n", "   "], StringSplitOptions.None);
 
         return lines.Select(int.Parse).ToArray();
     }

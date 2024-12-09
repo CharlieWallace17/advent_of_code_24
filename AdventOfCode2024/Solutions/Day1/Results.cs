@@ -1,4 +1,4 @@
-﻿using static AdventOfCode2024.Solutions.Day1.Utilities;
+using static AdventOfCode2024.Solutions.Day1.Utilities;
 
 namespace AdventOfCode2024.Solutions.Day1;
 
