@@ -1,1 +1,1 @@
-using static AdventOfCode2024.Solutions.Day2.Utilities;
+using static AdventOfCode2024.Solutions.Day3.Utilities;
